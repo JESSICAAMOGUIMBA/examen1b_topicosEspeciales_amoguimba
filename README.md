@@ -28,7 +28,7 @@ Todo esto se utilizarácon el fin de crear una aplicación que permita ingresar 
 ### Explicación ###
 ## NOTA: ##
 Previo a la realización del proyecto se debe verificar las versiones de las herramientas que usaremos.
-Esta imagen se puede apreciar la conexión con la Base de Datos.
+
 ![myimage-alt-tag](https://github.com/JESSICAAMOGUIMBA/Prueba1/blob/main/imagenes-readme/versiones.png)
 
 ### Comandos usados
