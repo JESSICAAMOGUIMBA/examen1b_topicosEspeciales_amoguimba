@@ -39,20 +39,20 @@ export class RegistrousuarioPage implements OnInit {
   registrousuario() {
     console.log(this.email);
     if (this.email == undefined || this.password == undefined) {
-      alert('Campos Vacios')
+      alert('Campos vacios o incompletos')
     } else {
       console.log('verificar')
       this.auth.createUserWithEmailAndPassword(this.email, this.password).then(res => {
-        console.log('Registro de usuario exitoso!');
+        console.log('Se registro el usuario');
         console.log(res.user.uid);
         this.user.nombre = this.nombre;
         this.user.email = this.email;
         this.user.password = this.password;
         this.db.collection('usuarios').doc(res.user.uid).set(this.user).then(() => {
           this.router.navigate(['/login']);
-          alert('Registro de usuario exitoso!');
+          alert('Se registro el usuario');
         });
-        //this.db.collection('usuarios').doc(res.user.uid).update({mensaje: 'hola'});
+        
       })
     }
 
